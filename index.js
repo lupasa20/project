@@ -1,18 +1,19 @@
-// Image slider functionality
-let currentIndex = 0;
-const images = document.querySelectorAll('.image-slider img');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navList = document.querySelector('.nav-list');
+    
+    menuIcon.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
 
-function showNextImage() {
-    images[currentIndex].style.display = 'none';
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].style.display = 'block';
-}
+    const images = document.querySelectorAll('.image-slider img');
+    let currentImageIndex = 0;
 
-setInterval(showNextImage, 3000); // Change image every 3 seconds
+    function showNextImage() {
+        images[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].style.display = 'block';
+    }
 
-// Form submission handling
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for booking with Hotel Sunshine!');
-    this.reset();
+    setInterval(showNextImage, 3000);
 });
