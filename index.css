@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 #home {
-    background-image: url('images/h12.jfif');
+    background-image: url('h12.jfif');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -140,13 +140,30 @@ form button {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+    margin-top: auto;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links p {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .footer-nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .footer-nav ul li {
@@ -157,19 +174,4 @@ footer {
 .footer-nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-.footer-links {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.footer-links a.fab {
-    font-family: "FontAwesome";
 }
