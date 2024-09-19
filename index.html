@@ -27,7 +27,7 @@
     }
 
     header img {
-      height: 50px;
+      height: 80px;
     }
 
     nav {
@@ -45,10 +45,12 @@
 
     /* Hero Section */
     .hero {
-      padding: 50px;
-      text-align: center;
-      background-color: #B3C100;
-      color: white;
+      background-image: url('a1.jfif');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px 20px;
+      text-shadow: 2px 2px 4px #000;
     }
 
     .hero h2 {
@@ -61,49 +63,71 @@
       margin-bottom: 20px;
     }
 
+    .hero button {
+      background-color: #4CB5F5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 20px;
+    }
+
     /* About Section */
     #about {
       padding: 50px;
-      background-color: #CED2CC;
+      background: linear-gradient(135deg, #000000 0%, #434343 100%);
       text-align: center;
     }
 
     #about h2 {
       font-size: 2.2em;
       margin-bottom: 15px;
+      color: #ffffff;
     }
 
     #about p {
       font-size: 1.1em;
+      color: #cccccc;
+    }
+
+    #about img {
+      width: 100%;
+      margin-top: 20px;
     }
 
     /* Features Section */
     #features {
       padding: 50px;
-      background-color: #4CB5F5;
-      color: white;
+      background: linear-gradient(135deg, #000000 0%, #434343 100%);
       text-align: center;
     }
 
     #features h2 {
       font-size: 2.2em;
       margin-bottom: 15px;
+      color: #ffffff;
+    }
+    #features h3 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+    .service {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
     }
 
-    #features ul {
-      list-style-type: none;
-      padding: 0;
+    .service img {
+      width: 100%;
+      height: auto;
     }
 
-    #features li {
-      font-size: 1.1em;
-      margin: 10px 0;
-    }
-
-    /* Dashboard Section */
+    /* Traffic Dashboard Section */
     #dashboard {
       padding: 50px;
-      background-color: #23282D;
+      background: linear-gradient(135deg, #000000 0%, #434343 100%);
       color: white;
       text-align: center;
     }
@@ -113,20 +137,73 @@
       margin-bottom: 15px;
     }
 
+    .dashboard-item {
+      background-color: #4CB5F5;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      width: 30%;
+    }
+
+    .dashboard-item h3 {
+      font-size: 1.5em;
+    }
+
+    .dashboard-item p {
+      font-size: 1.1em;
+    }
+
+    #alerts {
+      background-color:grey;
+      color:white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
     /* Contact Section */
     #contact {
       padding: 50px;
-      background-color: #6AB187;
+      background: linear-gradient(135deg, #000000 0%, #434343 100%);
       text-align: center;
     }
 
     #contact h2 {
       font-size: 2.2em;
       margin-bottom: 15px;
+      color: #ffffff;
     }
 
     #contact p {
       font-size: 1.1em;
+      color: #cccccc;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    #contact input, #contact textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #contact button {
+      background-color: #23282D;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      border-radius: 5px;
     }
 
     /* Footer */
@@ -134,7 +211,20 @@
       background-color: #23282D;
       color: white;
       text-align: center;
-      padding: 10px 0;
+      padding: 20px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer .social-links {
+      margin-bottom: 10px;
+    }
+
+    footer .social-links img {
+      height: 30px;
+      margin: 0 10px;
     }
 
     /* Responsive Design */
@@ -151,12 +241,16 @@
         margin: 0 10px;
         font-size: 0.9em;
       }
+
+      #about img, .dashboard-item {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="aluyeni.png" alt="ALUYENI Logo">
+    <img src="logo.jpg" alt="ALUYENI Logo">
     <nav>
       <a href="#hero">Home</a>
       <a href="#about">About</a>
@@ -170,40 +264,84 @@
   <section id="hero" class="hero">
     <h2>AI-Powered Traffic Optimization for a Smoother Commute</h2>
     <p>Experience cutting-edge technology designed to ease congestion and minimize delays.</p>
+    <button>Learn More</button>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About ALUYENI</h2>
     <p>ALUYENI uses real-time data from traffic cameras, sensors, and GPS devices to analyze and optimize traffic flow. Our AI algorithms dynamically adjust traffic signals and recommend alternative routes for drivers, reducing congestion and delays.</p>
+    <img src="x.png" alt="AI Traffic Management">
   </section>
 
   <!-- Features Section -->
   <section id="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Real-time Traffic Monitoring from multiple data sources.</li>
-      <li>AI-powered signal control for optimized flow.</li>
-      <li>Alternative route suggestions for faster travel.</li>
-      <li>Reduced idle times and emissions, improving environmental impact.</li>
-    </ul>
+    <h2>Features</h2>
+    <div class="service">
+      <img src="r1.jfif" alt="Real-time Monitoring">
+      <h3>Real-time Traffic Monitoring</h3>
+    </div>
+    <div class="service">
+      <img src="r2.jfif" alt="AI Signal Control">
+      <h3>AI-Powered Signal Control</h3>
+    </div>
+    <div class="service">
+      <img src="r3.png" alt="Route Suggestions">
+      <h3>Alternative Route Suggestions</h3>
+    </div>
   </section>
 
   <!-- Traffic Dashboard Section -->
   <section id="dashboard">
     <h2>Traffic Dashboard</h2>
-    <p>Monitor traffic patterns in real time. Analyze and optimize the flow of vehicles across the city using our AI dashboard.</p>
+
+    <!-- Traffic Statistics -->
+    <div class="dashboard-item">
+      <h3>Vehicles on the Road</h3>
+      <p>5,800</p>
+    </div>
+
+    <div class="dashboard-item">
+      <h3>Average Speed</h3>
+      <p>45 km/h</p>
+    </div>
+
+    <div class="dashboard-item">
+      <h3>Congestion Level</h3>
+      <p>Moderate</p>
+    </div>
+
+    <!-- Traffic Alerts -->
+    <div id="alerts">
+      <h3>Traffic Alerts</h3>
+      <p>Accident reported on Main St. Traffic rerouted to Elm St.</p>
+      <p>Heavy congestion on Highway 4. Expect delays.</p>
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Get in touch with us for more information or to schedule a demo of ALUYENI's AI traffic management system.</p>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2024 ALUYENI Traffic Management</p>
+    <p>Powered by Microbit Technologies Limited</p>
+    <div class="social-links">
+      <a href="#"><img src="playstore.png" alt="Play Store"></a>
+      <a href="#"><img src="appstore.png" alt="App Store"></a>
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter.jfif" alt="Twitter"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2024 ALUYENI. All rights reserved.</p>
   </footer>
 </body>
 </html>
