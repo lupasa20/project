@@ -1,130 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALUYENI - AI Traffic Management</title>
+  <style>
+    /* Reset some basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar styling */
+    header {
+      background-color: #4CB5F5;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 50px;
+      text-align: center;
+      background-color: #B3C100;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    /* About Section */
+    #about {
+      padding: 50px;
+      background-color: #CED2CC;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    #about p {
+      font-size: 1.1em;
+    }
+
+    /* Features Section */
+    #features {
+      padding: 50px;
+      background-color: #4CB5F5;
+      color: white;
+      text-align: center;
+    }
+
+    #features h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    #features ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #features li {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    /* Dashboard Section */
+    #dashboard {
+      padding: 50px;
+      background-color: #23282D;
+      color: white;
+      text-align: center;
+    }
+
+    #dashboard h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 50px;
+      background-color: #6AB187;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    #contact p {
+      font-size: 1.1em;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #23282D;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <nav>
-                <div class="menu-icon">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#rooms">Rooms</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#booking">Booking</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <img src="aluyeni.png" alt="ALUYENI Logo">
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#dashboard">Traffic Dashboard</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="home" class="section">
-        <h2>WELCOME TO CHALIMBANA HOTEL</h2>
-        <p>Experience the best stay at our hotel with luxurious rooms and top-notch amenities.</p>
-        <div class="image-slider">
-            <img src="h3.jfif" alt="Image 1">
-            <img src="h14.jfif" alt="Image 2">
-            <img src="h4.jfif" alt="Image 3">
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h2>AI-Powered Traffic Optimization for a Smoother Commute</h2>
+    <p>Experience cutting-edge technology designed to ease congestion and minimize delays.</p>
+  </section>
 
-    <section id="rooms" class="section">
-        <h2>OUR ROOMS</h2>
-        <div class="room">
-            <img src="h9.jfif" alt="Deluxe Room">
-            <h3>Deluxe Room</h3>
-            <p>Price: 1000 ZMW/night</p>
-            <button>Book Now</button>
-        </div>
-        <div class="room">
-            <img src="h3.jfif" alt="Couple Rooms">
-            <h3>Couple Rooms</h3>
-            <p>Price: 1500 ZMW/night</p>
-            <button>Book Now</button>
-        </div>
-        <div class="room">
-            <img src="h2.jfif" alt="Presidential Suite">
-            <h3>Presidential Rooms</h3>
-            <p>Price: 3000 ZMW/night</p>
-            <button>Book Now</button>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About ALUYENI</h2>
+    <p>ALUYENI uses real-time data from traffic cameras, sensors, and GPS devices to analyze and optimize traffic flow. Our AI algorithms dynamically adjust traffic signals and recommend alternative routes for drivers, reducing congestion and delays.</p>
+  </section>
 
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <p>At Hotel Sunshine, guests enjoy luxurious rooms and suites equipped with modern amenities for ultimate comfort. The hotel features a sparkling outdoor swimming pool, perfect for relaxation and leisure. Our gourmet dining options include a variety of exquisite dishes served in a fine dining restaurant, with additional lounge and bar services. For events and meetings, our versatile event spaces come with state-of-the-art audiovisual equipment and professional planning services, ensuring a successful and memorable experience for all occasions.</p>
-        <div class="service">
-            <img src="h5.jfif" alt="Swimming Pool">
-            <h3>Swimming Pool</h3>
-        </div>
-        <div class="service">
-            <img src="h1.jfif" alt="Fine Dining">
-            <h3>Fine Dining</h3>
-        </div>
-        <div class="service">
-            <img src="h14.jfif" alt="Event Spaces">
-            <h3>Event Spaces</h3>
-        </div>
-    </section>
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Real-time Traffic Monitoring from multiple data sources.</li>
+      <li>AI-powered signal control for optimized flow.</li>
+      <li>Alternative route suggestions for faster travel.</li>
+      <li>Reduced idle times and emissions, improving environmental impact.</li>
+    </ul>
+  </section>
 
-    <section id="booking" class="section">
-        <h2>Book Your Stay</h2>
-        <form id="bookingForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- Traffic Dashboard Section -->
+  <section id="dashboard">
+    <h2>Traffic Dashboard</h2>
+    <p>Monitor traffic patterns in real time. Analyze and optimize the flow of vehicles across the city using our AI dashboard.</p>
+  </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for more information or to schedule a demo of ALUYENI's AI traffic management system.</p>
+  </section>
 
-            <label for="checkin">Check-in Date:</label>
-            <input type="date" id="checkin" name="checkin" required>
-
-            <label for="checkout">Check-out Date:</label>
-            <input type="date" id="checkout" name="checkout" required>
-
-            <label for="roomType">Room Type:</label>
-            <select id="roomType" name="roomType" required>
-                <option value="deluxe">Deluxe Room</option>
-                <option value="executive">couple Rooms</option>
-                <option value="presidential">Presidential Rooms</option>
-            </select>
-
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <p>Email: brianlupasa14@gmail.com</p>
-        <p>Phone: 0764764085/0776491012</p>
-    </section>
-
-    <footer>
-        <div class="footer-links">
-            <a href="https://facebook.com" target="_blank" class="fab fa-facebook"></a>
-            <a href="https://whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
-            <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin"></a>
-            <a href="https://tiktok.com" target="_blank" class="fab fa-tiktok"></a>
-        </div>
-        <div class="footer-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#rooms">Rooms</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#booking">Booking</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <p>&copy; 2024 powered by Brian. All rights reserved.</p>
-    </footer>
-
-    <script src="index.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 ALUYENI Traffic Management</p>
+  </footer>
 </body>
 </html>
